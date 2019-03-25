@@ -143,12 +143,8 @@ h2 {
   position: relative;
   float: left;
   width: 274px;
-  margin: 20px 0 25px;
+  margin: 20px 10px 25px;
   overflow: auto;
-}
-
-.work:nth-child(even) {
-  margin-right: 40px;
 }
 
 .work img {
@@ -219,6 +215,54 @@ input[type=submit] {
   border: 0 none;
 }
 
+
+@media screen and (max-width: 980px) {
+  .main-section {
+    max-width: 650px;
+  }
+
+  .work {
+    margin: 5px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  #masthead {
+    width: 100%;
+    position: static;
+  }
+
+  nav {
+    padding-right: 20px;
+  }
+
+  #main-container {
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 50px;
+  }
+
+  .main-section {
+    margin-bottom: 300px;
+
+  }
+
+  .auth-image {
+    float: left;
+    width: 50%;
+  }
+
+  .work {
+    width: 47%;
+  }
+
+  .work:nth-child(even) {
+    margin-right: 10px;
+  }
+
+}
+
 @media screen and (max-width: 640px) {
   #masthead {
     position: static;
@@ -240,32 +284,17 @@ input[type=submit] {
 
   nav a {
     padding: 15px;
+    border: none;
   }
 
   .auth-image {
     float: none;
     width: 100%;
   }
-}
 
-@media screen and (max-width: 768px) {
-  #masthead {
+
+  /* Cards take up 100% of available space in its row */
+  .work {
     width: 100%;
   }
-
-  nav {
-    padding-right: 20px;
-  }
-
-  #main-container {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  .auth-image {
-    float: left;
-    width: 50%;
-  }
 }
-
-@media screen and (max-width: 980px) {}
